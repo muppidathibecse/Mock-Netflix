@@ -1,0 +1,230 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    margin: 0;
+    padding-top: 80px; 
+}
+.nav-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; 
+    background-color: black;
+    border-bottom: 1px rgb(126, 126, 126) solid;
+}
+.nav-items{
+    display: flex;
+    gap: 60px;
+}
+hr{
+    color: gray;
+}
+.nav-container>h1{
+    color: red;
+}
+.nav-container>img{
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+}
+a{
+    text-decoration: none;
+    color: rgb(155, 155, 155);
+}
+a:hover{
+    color: white;
+}
+.start{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.para{
+    letter-spacing: 0.1px;
+    word-spacing: 3px;
+    text-align: justify;
+    line-height: 25px;
+}
+.start>img{
+    width: 800px;
+    border-radius: 20px;
+    padding: 20px;
+    border-radius: 20px;
+}
+.start-details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 40px;
+}
+.start-btn{
+    margin-top: 10px;
+    display: flex;
+    gap: 30px;
+}
+.start-btn > .cancel-btn{
+    background-color: black;
+    color: white;
+    border: 1px gray solid;
+}
+.start-btn>button{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: red;
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    letter-spacing: 0.4px;
+}
+.year{
+    color: gray;
+}
+.moivelist-container{
+    margin-left: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+    padding: 20px;
+}
+.recent{
+    margin-left: 20px;
+    color: white;
+}
+.recent-hr{
+    margin-left: 20px;
+    width: 80px;
+    height: 3px;
+    background-color: white;
+    border-radius: 60px;
+}
+.images>p{
+    color: rgb(243, 243, 243);
+    font-size: 15px;
+    letter-spacing: 0.3px;
+}
+.images>.review{
+    color: gray;
+    font-size: 13px;
+}
+.copyright{
+    margin-top: 20px;
+    color: rgb(177, 177, 177);
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 0.2px;
+}
+hr{
+    color: gray;
+}
+input{
+    width: 400px;
+    padding: 10px 12px;
+    background-color: black;
+    color: white;
+    border: 1px gray solid;
+    border-radius: 20px;
+}
+.n-menu-wrap{
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 80px;
+    right: 140px;
+    width: 220px;
+    max-height: 0px;
+    overflow: hidden;
+    border-radius: 20px;
+    
+}
+.n-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.n-menu-wrap.nopen-menu{
+    max-height: 200px;
+}
+.sub-menu-wrap{
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    width: 220px;
+    max-height: 0px;
+    overflow: hidden;
+    border-radius: 20px;
+    
+}
+.sub-menu-wrap.open-menu{
+    max-height: 200px;
+    border-radius: 20px;
+}
+.top-down-img{
+    height: 50px;
+    width: 50px;
+}
+.user-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 50px;
+}
+.user-info>h4>a{
+    text-decoration: none;
+}
+.user-info h4 a:hover{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+img{
+    cursor: pointer;
+}
+.main-img{
+    width: 800px;
+    padding: 20px;
+    border-radius: 20px;
+}
+.moivelist-container > .images > img {
+    height: 300px;
+    width: 200px;
+    transition: all 1s ease-in-out; 
+}
+
+.moivelist-container > .images > img:hover {
+    height: 350px;
+    width: 250px;
+}
+.result-box{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    position: absolute;
+    width: 400px;
+    top: 80px;
+    left: 52%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    border-radius: 20px;
+}
+.result-box>li{
+    list-style: none;
+    cursor: pointer;
+    padding: 20px;
+}
+.result-box>li:hover{
+    background-color: rgb(209, 209, 209);
+    color: black;
+    transition: all 0.8s;
+}

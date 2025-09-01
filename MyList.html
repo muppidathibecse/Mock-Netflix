@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./MyList.css">
+</head>
+<body>
+    <div class="nav-container">
+        <h1>NETFLIX</h1>
+        <div class="nav-items">
+            <a href="./Home.html">Home</a>
+            <a href="./Tvshows.html">TV Shows</a>
+            <a href="./Movie.html">Movies</a>
+            <a href="#" style="color: white;">My List</a>
+        </div>
+        <input type="text" placeholder="Search here" id="input-box">
+         <div class="result-box">
+        </div>
+        <img src="./Images/N.avif" alt="" onclick="NToggle()">
+        <div class="n-menu-wrap" id="nmenu">
+            <div class="n-menu">
+                <h4>No Notifications</h4>
+            </div>
+        </div>
+        <img src="./Images/blue-circle-with-white-user_78370-4707.avif" alt="" onclick="Toggle()">
+        <div class="sub-menu-wrap" id="submenu">
+            <div class="sub-menu">
+                <div class="user-info">
+                    <img src="./Images/blue-circle-with-white-user_78370-4707.avif" class="top-down-img">
+                    <h4 style="color: white;"><a href="./Netflix.html">Logout</a></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h3 id="mylist">No Lists</h3>
+    <ul id="lists"></ul>
+    <hr>
+    <h3>Recommended</h3>
+    <div class="container">
+        <div class="images">
+            <img src="./Images/MA1.jpg" alt="">
+            <p>F1</p>
+            <button>Add</button>
+        </div>
+        <div class="images">
+            <img src="./Images/MB1.avif" alt="">
+            <p>Titanic</p>
+            <button>Add</button>
+        </div>
+        <div class="images">
+            <img src="./Images/MD1.jpg" alt="">
+            <p>Jocker</p>
+            <button>Add</button>
+        </div>
+        <div class="images">
+            <img src="./Images/ME1.jpg" alt="">
+            <p>Freedom</p>
+            <button>Add</button>
+        </div>
+    </div>
+</body>
+<script src="./Script1.js">
+    
+    
+</script>
+</html>

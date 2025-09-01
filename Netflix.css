@@ -1,0 +1,63 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction:column;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+h1{
+    font-size: 50px;
+}
+.netflix{
+    color: red;
+    font-size: 100px;
+}
+.container>p{
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.details>p{
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    color: white;
+}
+button>a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.details>p>a{
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.details>button{
+    width: 300px;
+    height: 50px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}

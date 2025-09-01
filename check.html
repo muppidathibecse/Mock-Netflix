@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add Image & Text to List</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .images {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      text-align: center;
+    }
+    .images img {
+      width: 120px;
+      height: auto;
+      display: block;
+      margin-bottom: 8px;
+    }
+    ul {
+      margin-top: 20px;
+      padding: 0;
+      list-style-type: none;
+    }
+    ul li {
+      background: #f0f0f0;
+      margin: 8px 0;
+      padding: 8px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border-radius: 4px;
+    }
+    ul li img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="images">
+    <img src="./Images/MA1.jpg" alt="">
+    <p>The Powerhouse Girls</p>
+    <button>Add</button>
+  </div>
+
+  <div class="images">
+    <img src="./Images/MB1.avif" alt="">
+    <p>Spider Man</p>
+    <button>Add</button>
+  </div>
+
+  <h3 id="mylist">Not found</h3>
+  <ul id="myList"></ul>
+
+  <script>
+    const heading = document.getElementById("mylist");
+    const buttons = document.querySelectorAll('.images button');
+    const myList = document.getElementById('myList');
+
+    buttons.forEach(button => {
+      button.addEventListener('click', () => {
+        const container = button.parentElement;
+        const movieName = container.querySelector('p').innerText;
+        const imgSrc = container.querySelector('img').src;
+
+        if (heading.textContent === "Not found") {
+          heading.textContent = "My List";
+        }
+
+        const existingItems = myList.querySelectorAll('li p');
+        for (let item of existingItems) {
+          if (item.innerText === movieName) {
+            alert('Item already added!');
+            return; 
+          }
+        }
+        const li = document.createElement('li');
+
+        const img = document.createElement('img');
+        img.src = imgSrc;
+
+        const p = document.createElement('p');
+        p.innerText = movieName;
+
+        li.appendChild(img);
+        li.appendChild(p);
+        myList.appendChild(li);
+      });
+    });
+  </script>
+
+</body>
+</html>
