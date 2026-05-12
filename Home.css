@@ -14,15 +14,15 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0 20px; 
-    background-color: black;
-    border-bottom: 1px rgb(126, 126, 126) solid;
+    background-color: red;
+    border-bottom: 1px rgb(126, 12, 126) solid;
 }
 .nav-items{
     display: flex;
     gap: 60px;
 }
 hr{
-    color: gray;
+    color: red;
 }
 .nav-container>h1{
     color: red;
